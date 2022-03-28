@@ -1,0 +1,277 @@
+
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+
+    
+}
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+	.log img {
+		width: 90px;
+		height: auto;
+		transition: .5s;
+	}
+	.is-sticky .log img {
+		width: 80px;
+		height: auto;
+		transition: .5s;
+	}
+	#Navigation {
+		padding-right: 0; 
+	}
+	#Navigation .ManiMenu ul {
+		text-align: left;
+	}
+	#Navigation .ManiMenu ul li a {
+		font-size: 14px;
+		padding: 30px 10px;
+	}
+	.is-sticky #Navigation .ManiMenu ul li a {
+		padding: 25px 10px;
+		font-size: 14px;
+	}
+	#Navigation .socialIcon {
+	  top: 23px;
+	}
+	.is-sticky #Navigation .socialIcon {
+		top: 21px;
+		transition: all 0.5s ease 0s;
+	}
+	#Navigation .socialIcon ul li a {
+		padding: 0px 5px;
+	}
+	.height-100 {
+		height: 550px;
+	}
+	.header-content h1 {
+		font-size: 55px;
+		padding-bottom: 50px;
+		margin-bottom: 40px;
+	}
+	.about-right img {
+	    width: 100%;
+	}
+
+	.ingredientsItem {
+	  padding: 30px;
+	}
+	.padding-100 {
+	  padding: 50px 0;
+	}
+	.reviews-area p {
+	  font-size: 22px;
+	  line-height: 30px;
+	}
+
+	.resrvtion-item {
+	    padding: 15px 0;
+	}
+	.resrvtion-item img {
+	  width: 100%;
+	  background: #ccc;
+	}
+	.RContent {
+	    margin: auto;
+	    text-align: center;
+	    width: 80%;
+	}
+
+	#reservation form {
+	  margin: auto;
+	}
+	.form-area input {
+	  width: 100%;
+	}
+	.form-area input[type="submit"] {
+		width: 300px;
+	}
+	#Footer {
+	  font-size: 13px;
+	}
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+	.log img {
+		width: auto;
+		height: 70px;
+	}
+	.header-top .container {
+	  margin: 0;
+	  padding: 0;
+	}
+	.header-top .row {
+	  margin-left: 0;
+	  margin-right: 0;
+	}
+	.header-top .row {
+	  margin-left: 0;
+	  margin-right: 0;
+	}
+	.padding-0{
+		padding: 0;
+	}
+	.navbar-collapse {
+	  border-top: 1px solid transparent;
+	  box-shadow: 0 0 0;
+	  padding: 0;
+	}
+	#Navigation {
+	  padding-right: 0;
+	}
+	#Navigation .ManiMenu ul {
+	  margin: 0;
+	}
+	#Navigation .ManiMenu ul li {
+	  display: block;
+	}
+	.mobile-menu .nav.navbar-nav {
+	  background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+	}
+	#Navigation.mobile-menu .ManiMenu ul li a {
+	  padding: 15px ;
+	  position: relative;
+	  z-index: 1;
+	}
+	#Navigation.mobile-menu .ManiMenu ul li a::after {
+		  background: #DAB33E none repeat scroll 0 0;
+		  bottom: 0;
+		  content: "";
+		  height: 1px;
+		  left: 50%;
+		  position: absolute;
+		  transition: all 0.5s ease 0s;
+		  right: 50%;
+		  z-index: -1
+	}
+	#Navigation.mobile-menu .ManiMenu ul li a:hover:after{
+		left: 0;
+		right: 0;
+	}
+
+	.is-sticky #Navigation .ManiMenu ul li a {
+	  padding: 15px;
+	}
+	#Navigation .socialIcon ul li a {
+	  border-bottom: 0 solid #222;
+	  padding: 5px;
+	}
+	#Navigation .ManiMenu ul li.active::after {
+	    display: none;
+	}
+	#Navigation .socialIcon {
+	  top: -90px;
+	  right: 15px;
+	}
+	.is-sticky #Navigation .socialIcon {
+	  display: none;
+	}
+	.navbar-header {
+	  position: absolute;
+	  right: 15px;
+	  top: -56px;
+	}
+	.is-sticky .navbar-header {
+	  top: -50px;
+	}
+
+	.navbar-toggle {
+	  float: none;
+	  margin: 0;
+	  border: 1px solid #fff;
+	}
+	.navbar-toggle:hover {
+	  border: 1px solid #DAB33E;
+	}
+
+	.navbar-toggle .icon-bar {
+	  background: #fff none repeat scroll 0 0;
+	}
+	.navbar-toggle, .navbar-toggle .icon-bar{
+		-webkit-transition: .5s;
+		transition: .5s;
+	}
+	.height-100 {
+	  height: 300px;
+	}
+	h2 {
+	  font-size: 30px;
+	  padding: 5px 0;
+	}
+	.header-content h1 {
+	  font-size: 25px;
+	  margin-bottom: 15px;
+	  margin-top: 45px;
+	  padding-bottom: 30px;
+	}
+	.resturent-btn {
+	  margin: 0 5px;
+	  padding: 6px 15px;
+	  z-index: 1;
+	  font-size: 13px;
+	}
+	.about-left img {
+		margin-left: 0;
+		margin-top: 25px;
+	}
+	.about-right img {
+	  width: 100%;
+	  margin-top: 20px;
+	}
+	.reviews-area {
+	  padding: 5px;
+	}
+	.reviews-area .fa.fa-quote-left {
+	  font-size: 20px;
+	  left: 10px;
+	  top: 30%;
+	}
+	.reviews-area p {
+	  font-size: 14px;
+	  line-height: 1.3em;
+	  padding: 5px;
+	}
+	.padding-100 {
+	    padding: 50px 0;
+	}
+	.ingredientsItem {
+	  padding: 15px;
+	}
+
+	.resrvtion-item.text-center > img {
+	  height: 250px;
+	  margin-bottom: 15px;
+	  width: 100%;
+	  object-fit: cover;
+	}
+	.RContent p {
+	  text-align: justify;
+	}
+	.form-area input {
+		width: 100%;
+	}
+    .MenuItem {
+    	margin: 15px 0;
+    }
+
+    .ScrollToTop {
+    	right: 5px;
+    }
+}
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+.height-100 {
+	height: 350px;
+}
+.header-content h1 {
+	font-size: 35px;
+	margin-bottom: 20px;
+	margin-top: 45px;
+	padding-bottom: 35px;
+}
+.resturent-btn {
+	padding: 8px 15px;
+}
+	}

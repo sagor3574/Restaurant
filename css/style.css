@@ -1,0 +1,691 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: "Resturent Temaplte"
+    Template URI: http://webcode4u.com
+    Description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit..."
+    Author: Al Amin Sobuj
+    Author URI: http://webcode4u.com
+    Version: 1.0
+
+-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------
+
+** Default CSS
+** Transition CSS
+** Header Top Section CSS
+** Navigation CSS
+** Sticky Menu CSS
+** Slider Section CSS
+** About Section CSS
+** Ingredients Section CSS
+** Resturent Menu Section CSS
+** Reviews Section CSS
+** Reservation Section CSS
+** Footer Section CSS
+** Preloder CSS
+
+-----------------------------------------------------------------------------------*/
+
+/*
+Default CSS
+===============================*/
+*{padding:0; margin:0;}
+a, a:active, a:focus, a:hover{
+    outline:none;
+    text-decoration:none;
+}
+
+h1, h2, h3, h4, h5, p, ul{
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Yeseva One', cursive;
+}
+body, html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+h2 {
+    color: #cc9900;
+    font-size: 36px;
+    padding: 10px 0;
+    text-align: center;
+}
+p {
+    color: #4c4c4c;
+    font-family: 'Lato', sans-serif;
+}
+
+.divider{
+    background: url(../images/h2after.png) no-repeat;
+    background-position: bottom center;
+    height: 24px;
+}
+.resturent-btn {
+    color: #FFF;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1;
+    padding: 10px 20px;
+    margin: 0 15px;
+    border-radius: 2px;
+}
+.resturent-btn:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    border-radius: 2px;
+    opacity: .5;
+    z-index: -1;
+}
+.resturent-btn:hover {
+    color: #fff;
+    background: rgba(201, 161, 49, 1);
+}
+.parallax-bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/*transition*/
+.header-top,
+.log img,
+#Navigation .ManiMenu ul li a,
+#Navigation .ManiMenu ul li.active::after,
+#Navigation .socialIcon,
+.is-sticky .header-top,
+.is-sticky #Navigation .socialIcon,
+.is-sticky .log img,
+.resturent-btn,
+.pogoSlider-dir-btn,
+.pogoSlider-nav-btn,
+.form-area input,
+.paymentCardIcon a,
+.ScrollToTop a{
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+/*
+Header Top Section
+===============================*/
+.header-top {
+  background: url(../images/header-bg.png) no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: 22;
+}
+.log {
+    padding: 10px;
+}
+.log img {
+    width: auto;
+    height: 80px;
+}
+/*
+Navigation CSS
+=============================== */
+#Navigation {
+    padding-right: 100px;
+    position: relative;
+}
+
+#Navigation .ManiMenu ul {
+    list-style: outside none none;
+    text-align: left;
+    float: none;
+}
+#Navigation .ManiMenu ul li {
+    display: inline-block;
+    position: relative;
+    float: none;
+}
+#Navigation .ManiMenu ul li:hover a {
+    color: #f1c40f;
+}
+
+#Navigation .ManiMenu ul li a {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 45px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+}
+#Navigation .ManiMenu ul li.active::after {
+    background: #c8c6bb none repeat scroll 0px 0px;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.ManiMenu .nav > li > a:focus, .ManiMenu .nav > li > a:hover {
+  background-color: transparent;
+  text-decoration: none;
+}
+#Navigation .socialIcon {
+    position: absolute;
+    right: 0;
+    top: 40px;
+}
+#Navigation .socialIcon ul li {
+    display: inline-block;
+}
+#Navigation .socialIcon ul li a {
+    color: #dab33e;
+    font-size: 20px;
+    padding: 0 7px;
+}
+
+/*
+Sticky Menu CSS
+===================================*/
+.sticky-wrapper {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.is-sticky .header-top {
+    background: rgba(0,0,0,.8); none repeat scroll 0 0;
+}
+
+.is-sticky #Navigation .ManiMenu ul li a {
+   padding: 25px 20px;
+}
+
+.is-sticky #Navigation .socialIcon {
+  top: 25px;
+}
+.is-sticky .log img {
+  height: 50px;
+}
+
+/*
+Slider Section CSS
+================================*/
+#PogoSlider{
+    padding-bottom: 0 !important;
+    position: relative;
+}
+.pogoSlider{
+    padding-bottom: 0 !important;
+}
+.height-100{
+    height: 100%;
+}
+.pogoSlider-slide{
+    height: 100%;
+}
+.pogoSlider-slide:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -11;
+    opacity: .5;
+}
+.SliderItem{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.slide-table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.slide-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.header-content h1 {
+    background: transparent url("../images/diverder.png") no-repeat scroll center bottom;
+    color: #FFF;
+    font-size: 70px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+.pogoSlider-dir-btn {
+    border-color: rgba(241, 196, 15,.5);
+}
+.pogoSlider-dir-btn:hover {
+    border-color: rgba(241, 196, 15,1);
+}
+.pogoSlider-nav-btn {
+    background: rgba(241, 196, 15,.6);
+    border-radius: 0;
+    height: 4px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+.pogoSlider-nav-btn--selected {
+    background: #f1c40f;
+    box-shadow: 0 1px 1px rgba(0,0,0,.3);
+}
+.pogoSlider--navBottom .pogoSlider-nav {
+    bottom: 40px;
+}
+.pogoSlider-progressBar {
+    background: rgba(241, 196, 15,.2);
+}
+.pogoSlider-progressBar-duration{
+    background: rgba(241, 196, 15,.4);
+}
+.padding-100{
+    padding: 100px 0;
+}
+
+/*
+About Section CSS
+================================*/
+#about{
+    padding: 70px 0 50px;
+    position: relative;
+}
+.about-parallax{
+    background: url(../images/patterBg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.about-left h2 {
+    padding-top: 25px;
+}
+.about-left .divider{
+    margin: 10px 0px 20px;
+}
+.about-left img {
+    margin-left: 85px;
+    margin-top: 50px;
+}
+.about-right img {
+  width: 100%;
+}
+
+/*
+Ingredients Section CSS
+================================*/
+#ingredients{
+    position: relative;
+}
+.ingredients-parallax{
+    background: url(../images/ingredients-parallax.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+}
+.ingredients-parallax:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+    background: rgba(0,0,0,1);
+    opacity: .4;
+}
+#ingredients .divider,
+#reviews .divider{
+    background: rgba(0, 0, 0, 0) url("../images/diverder.png") no-repeat scroll center bottom;
+    margin: 10px 0;
+}
+.ingredientsItem {
+    padding: 80px;
+    position: relative;
+    z-index: 1;
+}
+.ingredientsItem::after {
+    background: #060708 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.67;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    border-radius: 3px;
+}
+.ingredientsItem h2 {
+    color: #fff;
+    text-transform: capitalize;
+}
+.ingredientsItem p {
+    color: #fff;
+    padding: 20px 0;
+    margin-bottom: 40px;
+}
+
+/*
+Resturent Menu Section CSS
+================================*/
+#resturent-menu{
+    background: url(../images/pattern-2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.MenuItem h3 {
+    border-bottom: 1px solid #e0d9b8;
+    color: #c89f2d;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    padding: 10px 0;
+}
+.MenuItem h3 span {
+    float: right;
+}
+.MenuItem {
+    color: #4c4c4c;
+    font-size: 15px;
+}
+.MenuItem .divider {
+    margin: 10px 0 20px;
+}
+.spacer{
+    margin-top: 60px;
+}
+.special {
+    border: 1px solid #e0d9b8;
+    margin-top: 30px;
+    padding: 10px 5px;
+    position: relative;
+}
+.special h3 {
+    margin: 0px;
+    padding: 5px 0;
+    margin-bottom: 5px;
+}
+.special > span {
+    background: #d7bc6f none repeat scroll 0 0;
+    bottom: 100%;
+    color: #f8fafa;
+    font-size: 14px;
+    padding: 2px 10px;
+    position: absolute;
+    right: -1px;
+}
+
+/*
+Reviews Section CSS
+=================================*/
+#reviews{
+    position: relative;
+}
+.reviews-parallax{
+    background: url(../images/reviews-parallax.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    z-index: -1;
+}
+.reviews-parallax:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+    background: rgba(0,0,0,1);
+    opacity: .2;
+}
+
+.reviews-area {
+    padding: 65px 20px;
+    position: relative;
+    z-index: 1;
+}
+.reviews-area::after {
+    background: #000 none repeat scroll 0 0;
+    border-radius: 3px;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.75;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.reviews-area h2 {
+    color: #fff;
+}
+.reviews-area p {
+    color: #fff;
+    font-size: 25px;
+    line-height: 45px;
+    padding: 15px 0;
+}
+.reviews-area span {
+    color: #FFF;
+    font-size: 18px;
+    padding-top: 25px;
+    display: inline-block;
+}
+.reviews-area .fa.fa-quote-left {
+    left: 15px;
+    position: absolute;
+    top: 33%;
+    color: #fff;
+    font-size: 25px;
+}
+.testimonial .owl-item,
+.testimonial .owl-stage{
+    width: 100% !important;
+}
+
+/*
+Reservation Section CSS
+=================================*/
+#reservation {
+    background: transparent url("../images/patterBg.jpg") no-repeat scroll center center / cover;
+}
+
+.RContent .divider {
+    margin: 10px 0 20px;
+}
+.RContent.text-center > p {
+    padding: 10px 0;
+}
+.RContent form {
+    margin: 20px 0;
+}
+
+#reservation form {
+    padding: 25px 0;
+}
+
+.form-area label {
+    color: #c9a131;
+    display: block;
+    font-size: 14px;
+    margin: 0;
+    padding: 5px 0;
+}
+.form-area input {
+    border: 1px solid #ccc;
+    color: #7c7c7c;
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 10px;
+    min-height: 35px;
+    padding: 5px 10px;
+    width: 200px;
+    outline: none;
+}
+.form-area input:focus {
+    border-color: #c9a131;
+}
+.form-area input[type="submit"] {
+    background: #c9a131 none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    font-style: normal;
+    margin: auto;
+    text-transform: capitalize;
+    margin-top: 15px;
+}
+
+/*
+Footer Section CSS
+===================================*/
+#Footer {
+    background: #191919;
+    padding: 50px 0;
+    color: #fefefe;
+}
+#Footer .divider{
+    background: url(../images/pattern-3.png) no-repeat;
+    background-position: center;
+    margin: 10px 0;
+}
+.footer-widgate{
+    padding: 10px 0;
+}
+.footer-widgate h4 {
+    color: #fefefe;
+    font-size: 21px;
+}
+.paymentCardIcon {
+    margin-top: 30px;
+}
+.paymentCardIcon > li {
+    display: inline-block;
+}
+.paymentCardIcon a {
+    color: #fff;
+    display: block;
+    font-size: 15px;
+    margin: 0 2px;
+}
+.paymentCardIcon a:hover{
+    color: #C9A131;
+}
+
+/*
+Preloder CSS
+-----------------------------*/
+.Preloder {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 22222;
+    background: #2c3e50;
+}
+.Preloder .spinner {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    z-index: 11111;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+.spinner {
+  margin: 100px auto;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
+}
+.spinner > div {
+  background-color: #FFC107;
+  height: 100%;
+  width: 3px;
+  display: inline-block;
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+
+/*
+Start Scroll to Top Section
+================================================== */
+.ScrollToTop{
+    position: fixed;
+    right: 15px;
+    bottom: 5px;
+    display: none;
+    z-index: 99999999;
+    font-size: 20px;
+}
+.ScrollToTop a{
+    display: inline-block;
+    background: #262626;
+    color: #FFC107;
+    width: 35px;
+    height: 35px;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 2px;
+    opacity: .5;
+}
+.ScrollToTop a:hover{
+    opacity: 1;
+}
+p.copyright {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
